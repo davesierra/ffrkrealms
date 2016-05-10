@@ -1,0 +1,39 @@
+<h1>List of Characters:</h1>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4>
+            Characters
+          </h4>
+        </div>
+        <table class="table table-striped table-hover table-fixed">
+          <thead>
+            <tr>
+              <th class="col-xs-4">Name</th>
+              <th class="col-xs-6">foo</th>
+              <th class="col-xs-2">bar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="character in characters">
+  				<td class="col-xs-4">
+  					<a href="#/character/{{character.index}}">{{character.name}}</a>
+  				</td>
+  				<td class="col-xs-6">
+  					<a href="#/character/{{character.index}}">foo</a>
+  				</td>
+  				<td class="col-xs-2">
+  					<a href="#/character/{{character.index}}">bar</a>
+  				</td>
+  			</tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
+</div>
